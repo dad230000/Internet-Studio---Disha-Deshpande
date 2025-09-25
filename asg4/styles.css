@@ -13,12 +13,16 @@
 h1 { 
     margin: 0 0 8px; 
     font-weight: 600; 
+    font-family: 'Creepster', cursive;
+    color: #b30000; 
 }
 
 h2 { 
     margin: 24px 0 8px;
     font-weight: 600; 
-    font-family: "Rubik Burned";
+    font-family: 'Creepster', cursive;
+    color: #b30000; 
+    letter-spacing: 2px;
 }
 
 p { 
@@ -38,5 +42,4 @@ p {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
-
 
