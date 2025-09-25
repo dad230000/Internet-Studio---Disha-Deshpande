@@ -26,3 +26,17 @@ p {
     color: blue; 
 }
 
+.hero {
+  text-align: center;   
+  margin-bottom: 20px;
+}
+
+.hero img.poster {
+  width: 100%;         
+  max-width: 600px;     
+  height: auto;         
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
