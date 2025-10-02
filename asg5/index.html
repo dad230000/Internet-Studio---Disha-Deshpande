@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Dinner Invitation</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+ 
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="wrapper">
+    <h1>Dinner Invitation</h1>
+    <p class="intro">You're invited to an evening with three special guests. Dress comfy, come hungry!</p>
+  </header>
+
+<main class="wrapper">
+    
+<section id="guests">
+   <h2>Guests of Honor</h2>
+
+   <img src="images/AJ.jpg" alt="Jennifer Aniston" width="300">
+   <h3>Jennifer Aniston</h3>
+   <p>Beloved actress best known for her role as Rachel Green in <em>Friends</em>. I'd love to talk with her about her career in television and film, her comedic timing, and how she continues to inspire with her work and presence in Hollywood.</p>
+
+
+   <img src="images/CH.jpg" alt="Chris Hemsworth" width="300">
+   <h3>Chris Hemsworth</h3>
+   <p> Action star and wellness advocate. I'd ask about training, mindset, and how discipline fuels creativity—plus a fun story from filming.</p>
+
+
+   <img src="images/JA.jpg" alt="Angelina Jolie" width="300">
+   <h3>Angelina Jolie</h3>
+   <p> Actor, director, and humanitarian. I'd love to discuss global storytelling, activism, and how film can inspire real change.</p>
+</section>
+
+
+<section id="menu">
+    <h2>Menu</h2>
+      <ul>
+        <li><strong>Appetizers:</strong> Caprese skewers, hummus & veg, spinach puffs</li>
+        <li><strong>Main Course:</strong> Lemon herb chicken or paneer tikka; roasted veggies; garlic rice</li>
+        <li><strong>Dessert:</strong> Chocolate lava cake, berry tart</li>
+        <li><strong>Drinks:</strong> Sparkling lemonade, iced tea, coffee</li>
+      </ul>
+</section>
+
+
+<section id="rsvp">
+    <h2>RSVP</h2>
+    <form>
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required>
+
+        <fieldset>
+          <legend>Will you be bringing a guest?</legend>
+          <label><input type="radio" name="bringing_guest" value="yes"> Yes</label>
+          <label><input type="radio" name="bringing_guest" value="no"> No</label>
+        </fieldset>
+
+    <label for="diet">Dietary preferences</label>
+    <textarea id="diet" name="diet" rows="4" placeholder="e.g., vegetarian, nut allergy"></textarea>
+
+    <button type="submit">Submit RSVP</button>
+    </form>
+</section>
+</main>
+
+<footer class="wrapper small">
+    <p>Looking forward to dining together!</p>
+</footer>
+</body>
+</html>
