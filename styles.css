@@ -54,8 +54,3 @@ a {
   text-decoration: none;
   border-radius: 20px;
 }
-
-a:hover {
-  background-color: purple;
-  color: white;
-}
