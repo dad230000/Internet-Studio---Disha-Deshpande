@@ -5,9 +5,43 @@
 }
 
 body {
-  background: linear-gradient(to right, #f4f9ff, #d6eaf8); /* soft gradient */
+  background: linear-gradient(to right, #f4f9ff, #d6eaf8);
   font-family: 'Roboto', sans-serif;
   margin: 20px;
   line-height: 1.6;
   color: #2c3e50;
 }
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #145a32; 
+  margin-top: 30px;
+  text-align: center;
+}
+
+ul {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
