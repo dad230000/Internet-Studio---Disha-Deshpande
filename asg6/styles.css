@@ -1,3 +1,17 @@
+html {
+      background: #f7f9fa url("images/background.jpeg") repeat fixed;
+    }
+
+.wrap {
+      max-width: 900px;
+      margin: 32px auto;              
+      padding: 24px;
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,.08);
+      border-radius: 16px;
+    }
+
+
 body {
     font-family: "Lato", Arial, sans-serif;
     color: var(--text);
