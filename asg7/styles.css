@@ -15,3 +15,72 @@
   font-weight: 400;
   font-style: italic;
 }
+
+body { 
+    font-family: 'Poppins', Arial, sans-serif; margin: 0; 
+    line-height: 1.6; background: #fffaf2; 
+    color: #222; 
+}
+
+.container { 
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 16px; 
+}
+
+
+header { 
+    background: tomato; 
+    color: white; 
+    text-align: center; 
+    padding: 24px 16px; 
+}
+
+header h1 { 
+    margin: 0 0 8px; 
+    font-weight: 700; 
+}
+
+header p { 
+    margin: 0; 
+}
+
+.layout { 
+    display: flex; 
+    gap: 16px; 
+    flex-wrap: wrap; 
+}
+
+.main { 
+    flex: 2 1 520px; 
+}
+
+aside { 
+    flex: 1 1 260px; 
+}
+
+section, aside { 
+    background: white; 
+    padding: 16px; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06); 
+}
+
+h2 { 
+    margin-top: 0; 
+}
+
+img { 
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    display: block; 
+}
+
+.button { 
+    display: inline-block; 
+    background: tomato; color: #fff; 
+    text-decoration: none; 
+    padding: 8px 12px; 
+    border-radius: 6px; 
+}
