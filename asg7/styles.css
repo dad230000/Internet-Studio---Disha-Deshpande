@@ -10,7 +10,10 @@
   font-style: normal;
 }
 
-* { box-sizing: border-box; }
+* { 
+  box-sizing: border-box; 
+}
+
 :root{
   --bg:#fffaf2;
   --card:#ffffff;
@@ -28,7 +31,11 @@ body{
   font-family: "IM Fell Great Primer", serif;
 }
 
-.container{ max-width:960px; margin:auto; padding:24px 16px; }
+.container { 
+  max-width:960px; 
+  margin:auto; 
+  padding:24px 16px; 
+}
 
 header{
   background: linear-gradient(135deg, var(--accent), #ff7b54);
@@ -37,34 +44,44 @@ header{
   padding:40px 16px 36px;
   box-shadow: var(--shadow);
 }
-header h1{ margin:0 0 8px; font-size: clamp(28px, 4vw, 44px); }
-header p{ margin:0; font-size: clamp(14px, 2.2vw, 18px); opacity:.95; }
 
+header h1 { 
+  margin:0 0 8px; 
+  font-size: clamp(28px, 4vw, 44px); 
+}
+
+header p { 
+  margin:0; 
+  font-size: clamp(14px, 2.2vw, 18px); 
+  opacity:.95; 
+}
 
 .layout{
   display:grid;
   gap:24px;
   grid-template-columns: 1fr;          
 }
-@media (min-width: 900px){
-  .layout{ grid-template-columns: 2fr 1fr; }
+@media (min-width: 900px) {
+  .layout { 
+    grid-template-columns: 2fr 1fr; 
+  }
 }
 
-/* --- cards --- */
-section, aside{
+section, aside {
   background:var(--card);
   border-radius:16px;
   padding:20px;
   box-shadow: var(--shadow);
 }
-h2{
+
+h2 {
   margin:0 0 10px;
   font-size: clamp(20px, 2.6vw, 28px);
   line-height:1.25;
   font-family: "Flavors", cursive;
 }
 
-img.portrait{
+img.portrait {
   display:block;
   width:100%;
   max-width: 420px;     
@@ -74,7 +91,7 @@ img.portrait{
   box-shadow: var(--shadow);
 }
 
-a.button{
+a.button {
   display:inline-block;
   padding:10px 14px;
   background:var(--accent);
@@ -83,11 +100,20 @@ a.button{
   border-radius:10px;
   font-weight:700;
 }
-a.button:hover{ background:var(--accent-dark); }
-a{ color:var(--accent); }
 
-.lede{ font-style: italic; }
-footer{
+a.button:hover { 
+  background:var(--accent-dark); 
+}
+
+a { 
+  color:var(--accent); 
+}
+
+.lede { 
+  font-style: italic; 
+}
+
+footer {
   text-align:center;
   color:#555;
   padding:28px 16px 40px;
