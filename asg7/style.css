@@ -99,3 +99,84 @@ a:hover {
     font-size: 1.4em; 
 }
 }
+
+/* ===== polish + definite image sizing ===== */
+
+/* subtle pasta-paper background + tint */
+body::before{
+  content:"";
+  position:fixed; inset:0;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(255,255,255,.65), transparent 60%),
+    radial-gradient(1200px 600px at 110% 110%, rgba(255,255,255,.55), transparent 60%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80'><path d='M10 30 C30 10, 50 50, 70 30' fill='none' stroke='%23ead9b7' stroke-width='3' stroke-linecap='round'/></svg>") repeat;
+  opacity:.55;
+  z-index:-1;
+}
+
+header, section, footer {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.92);
+  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+}
+section h2{
+  padding-bottom:.35rem;
+  border-bottom: 3px solid color-mix(in srgb, var(--accent) 70%, #fff);
+  display:inline-block;
+}
+
+h1 {
+    letter-spacing:.2px; 
+    margin-bottom:.2rem; 
+}
+
+h2 { 
+    margin: .2rem 0 .8rem; 
+}
+
+h3 { 
+    margin: .6rem 0 .4rem; 
+}
+
+p { 
+    line-height: 1.75; 
+}
+
+section img {
+  width: 100%;
+  max-width: 560px;        
+  height: auto;
+  display: block;
+  margin: 8px auto 10px;   
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  object-fit: cover;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+.gallery figure{
+  margin:0; background:#fff; border:1px solid var(--border);
+  border-radius:12px; overflow:hidden; box-shadow:0 6px 16px rgba(0,0,0,.06);
+}
+.gallery img{ max-width:100%; aspect-ratio: 16/10; object-fit: cover; }
+.gallery figcaption{ padding:8px 10px; font-size:.95em; color:#555; text-align:center; }
+
+.kicker{
+  display:inline-block; padding:4px 10px; border-radius:999px;
+  background: color-mix(in srgb, var(--brand) 12%, #fff);
+  color: var(--brand); font-weight:700; font-size:.85em; margin-bottom:6px;
+}
+
+@media (max-width: 480px){
+  h1{ font-size: 1.7em; }
+  h2{ font-size: 1.35em; }
+  section img{ max-width: 92vw; }
+}
+
