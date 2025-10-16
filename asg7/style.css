@@ -1,0 +1,94 @@
+:root{
+--bg:#faf8f5;
+--ink:#222;
+--brand:#e84545;
+--accent:#4CAF50;
+--card:#ffffff;
+--border:#e0ddd7;
+}
+
+body {
+    margin:0;
+    background:var(--bg) url('./images/paper-texture.jpg') center/cover fixed no-repeat;
+    color:var(--ink);
+    line-height:1.7; 
+    font-family:"Farsan", cursive;
+    font-size:1.1em;
+}
+
+.wrapper {
+    max-width:950px;
+    margin:auto;
+    padding:20px;
+}
+
+
+header, section, footer {
+    background:var(--card); 
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:20px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.08);
+    margin-bottom:18px;
+}
+
+
+h1, h2, h3{
+    font-family:"Quintessential", serif;
+    font-weight:400;
+    margin-top:0;
+}
+
+h1 {
+    color:var(--brand);
+    font-size:2.4em;
+}
+
+h2 {
+    color:var(--accent);
+    font-size:1.8em;
+}
+
+h3 {
+    color:#333;
+    font-size:1.4em;
+}
+
+
+p {
+    margin-bottom:12px;
+}
+
+a {
+    color:var(--brand);
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:12px;
+}
+
+figure {
+    margin:0;
+    background:#fff;
+    border-radius:12px;
+    border:1px solid var(--border);overflow:hidden;
+}
+
+figure img {
+    width:100%;
+    display:block;
+}
+
+figure figcaption {
+    padding:8px;
+    font-size:0.9em;
+    text-align:center;
+    color:#555;
+}
