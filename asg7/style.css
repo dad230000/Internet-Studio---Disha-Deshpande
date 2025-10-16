@@ -9,7 +9,7 @@
 
 body {
     margin:0;
-    background:var(--bg) url('./images/paper-texture.jpg') center/cover fixed no-repeat;
+    background:var(--bg) url('./images/background.jpeg') center/cover fixed no-repeat;
     color:var(--ink);
     line-height:1.7; 
     font-family:"Farsan", cursive;
