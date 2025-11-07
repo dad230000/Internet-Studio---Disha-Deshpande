@@ -1,0 +1,286 @@
+/* ===== CUTE SANTORINI THEME ===== */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fffafc;       /* soft warm white */
+  color: #2b2b2b;
+  background: linear-gradient(180deg, #fffafc 0%, #fdf7ff 40%, #f0f8ff 100%);
+}
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+  color: #0066aa;
+}
+
+/* 🌊 Navigation Bar */
+.menu a, 
+.brand-name {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* 🌸 Buttons */
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: none; /* keep them soft and readable */
+}
+
+/* 💫 Footer text */
+.footer, 
+.footer .small {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+
+/* cinzel-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/cinzel-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* cinzel-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/cinzel-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/inter-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Images & Containers */
+img { max-width: 100%; height: auto; border-radius: 12px; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #0077b6;                  /* Greek blue */
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 36px;
+  color: #0077b6;
+  text-shadow: 1px 1px #bde0fe;
+}
+h2 { color: #00b4d8; }
+h3 { color: #ff8fab; }
+
+/* Paragraphs */
+p {
+  line-height: 1.7;
+  font-size: 16px;
+  color: #444;
+}
+
+/* ===== NAVBAR ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #e6f4f1;      /* light aqua */
+  border-bottom: 2px solid #bde0fe;
+  padding: 10px 0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.brand-logo {
+  width: 30px; height: 30px;
+  border-radius: 8px;
+  background-color: #ffb5a7;      /* blush pink */
+}
+.brand-name {
+  color: #0077b6;
+  font-weight: bold;
+  font-size: 18px;
+}
+.menu {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.menu a {
+  text-decoration: none;
+  color: #0077b6;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #bde0fe;
+  font-weight: 500;
+}
+.menu a:hover {
+  background: #caf0f8;
+  color: #023e8a;
+}
+.menu a.active {
+  background: #ffb5a7;
+  color: white;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background-color: #fdfdff;
+  padding: 40px 0;
+}
+.hero .grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: center;
+}
+.hero .card {
+  background: #ffffff;
+  border: 2px solid #bde0fe;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* ===== BUTTONS ===== */
+.btn-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+}
+.btn.primary {
+  background: #0077b6;
+  color: #fff;
+}
+.btn.primary:hover {
+  background: #0096c7;
+}
+.btn.secondary {
+  background: #ffb5a7;
+  color: #fff;
+}
+.btn.secondary:hover {
+  background: #f28482;
+}
+.btn.ghost {
+  background: #fff;
+  color: #0077b6;
+  border: 2px solid #bde0fe;
+}
+.btn.ghost:hover {
+  background: #caf0f8;
+}
+
+/* ===== CARDS & GRIDS ===== */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #bde0fe;
+  border-radius: 15px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+.card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease;
+}
+
+/* ===== HIGHLIGHT BOXES ===== */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+.kpi {
+  background: #fef6f9;           /* pink tint */
+  border: 1px dashed #ffb5a7;
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+.kpi .num {
+  color: #ff8fab;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background: #e6f4f1;
+  border-top: 2px solid #bde0fe;
+  color: #333;
+}
+.footer .cols {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 16px;
+}
+.footer a {
+  color: #0077b6;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FORM ===== */
+form {
+  display: grid;
+  gap: 12px;
+}
+label {
+  font-weight: bold;
+  color: #0077b6;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bde0fe;
+  border-radius: 10px;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+textarea { min-height: 150px; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero .grid, .grid-3 { grid-template-columns: 1fr; }
+  .kpis { grid-template-columns: repeat(2, 1fr); }
+  .footer .cols { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .kpis { grid-template-columns: 1fr; }
+  .menu { gap: 6px; }
+}
