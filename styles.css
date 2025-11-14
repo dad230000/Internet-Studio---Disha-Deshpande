@@ -70,3 +70,33 @@ a {
   margin-top: 8px;
   font-family: 'Poppins', sans-serif;
 }
+
+.assign-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 900px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.assign-list li a {
+  display: block;
+  background: #f5e6ff;
+  color: #6a1b9a;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.assign-list li a:hover {
+  background: #e8d4ff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
