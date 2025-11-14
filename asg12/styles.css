@@ -1,0 +1,87 @@
+/* 
+      .--..--..--..--..--..--.
+    .' \  (`._   (_)     _   \
+  .'    |  '._)         (_)  |
+  \ _.')\      .----..---.   /
+  |(_.'  |    /    .-\-.  \  |
+  \     0|    |   ( O| O) | o|
+   |  _  |  .--.____.'._.-.  |
+   \ (_) | o         -` .-`  |
+    |    \   |`-._ _ _ _ _\ /
+    \    |   |  `. |_||_|   |
+    | o  |    \_      \     |     -.   .-.
+    |.-.  \     `--..-'   O |     `.`-' .'
+  _.'  .' |     `-.-'      /-.__   ' .-'
+.' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
+`-._  `.  |________/\_____|    `-.'
+   .'   ).| '=' '='\/ '=' |
+   `._.`  '---------------'
+           //___\   //___\
+             ||       ||
+             ||_.-.   ||_.-.
+            (_.--__) (_.--__)
+       
+
+ Insert all your glorious CSS styles below! */
+
+ /* ===== BASIC PAGE STYLING ===== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f4f7;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Summary paragraph */
+.summary {
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.summary p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ===== GRID LAYOUT ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 25px; /* space between cards */
+  padding: 0 20px;
+}
+
+/* Each movie card */
+.gallery div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px; /* assignment requirement */
+  border-radius: 8px;
+}
+
+.gallery h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #222;
+}
+
+.gallery p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
