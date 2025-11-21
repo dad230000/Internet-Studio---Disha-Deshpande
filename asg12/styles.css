@@ -31,7 +31,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 20px;
-  background: url("bg.svg"); /* BGJar background */
+  background: url("images/bg.svg"); /* BGJar background */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
