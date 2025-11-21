@@ -47,9 +47,18 @@ body {
   src: url('fonts/antic-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* bigshot-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Bigshot One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/bigshot-one-v31-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* Main page title */
 h1 {
-  font-family: "Playfair Display", serif; /* heading font */
+  font-family: 'Bigshot One', serif;
   color: #ffffff;
   margin-bottom: 10px;
   font-size: 2.2rem;
