@@ -41,7 +41,7 @@ body {
 /* Main page title */
 h1 {
   font-family: "Playfair Display", serif; /* heading font */
-  color: #1f2937;
+  color: #ffffff;
   margin-bottom: 10px;
   font-size: 2.2rem;
 }
@@ -57,7 +57,7 @@ h1 {
 .summary p {
   font-size: 1rem;
   line-height: 1.7; /* improved readability */
-  color: #374151;
+  color: #f1f5f9;
 }
 
 /* ===========================================
