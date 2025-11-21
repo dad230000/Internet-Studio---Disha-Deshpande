@@ -38,6 +38,15 @@ body {
   color: #222;
 }
 
+/* antic-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Antic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/antic-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 /* Main page title */
 h1 {
   font-family: "Playfair Display", serif; /* heading font */
@@ -58,6 +67,7 @@ h1 {
   font-size: 1rem;
   line-height: 1.7; /* improved readability */
   color: #f1f5f9;
+  font-family: 'Antic', sans-serif; 
 }
 
 /* ===========================================
